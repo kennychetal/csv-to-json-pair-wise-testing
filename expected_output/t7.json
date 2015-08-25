@@ -1,0 +1,17 @@
+[
+    {
+        "notsymbols": "@", 
+        "letters": "a", 
+        "numbers": "4"
+    }, 
+    {
+        "notsymbols": "$", 
+        "letters": "b", 
+        "numbers": "7"
+    }, 
+    {
+        "notsymbols": "%", 
+        "letters": "c", 
+        "numbers": "5"
+    }
+]

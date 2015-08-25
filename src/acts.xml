@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="473 Assignment 1">
+  <Parameters>
+    <Parameter id="0" name="isCsvFile" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+    </Parameter>
+    <Parameter id="1" name="isValidCsv" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+    </Parameter>
+    <Parameter id="2" name="inputsIncludeNumber" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+    </Parameter>
+    <Parameter id="3" name="inputsIncludeLetter" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+    </Parameter>
+    <Parameter id="4" name="inputsIncludeSymbols" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="isCsvFile = false =&gt; isValidCsv = false">
+      <Parameters>
+        <Parameter name="isCsvFile" />
+        <Parameter name="isValidCsv" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="isCsvFile = false =&gt; inputsIncludeNumber = false">
+      <Parameters>
+        <Parameter name="isCsvFile" />
+        <Parameter name="inputsIncludeNumber" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="isCsvFile = false =&gt; inputsIncludeLetter = false">
+      <Parameters>
+        <Parameter name="isCsvFile" />
+        <Parameter name="inputsIncludeLetter" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="isCsvFile = false =&gt; inputsIncludeSymbols = false">
+      <Parameters>
+        <Parameter name="isCsvFile" />
+        <Parameter name="inputsIncludeSymbols" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="isValidCsv = false =&gt; inputsIncludeNumber = false ">
+      <Parameters>
+        <Parameter name="isValidCsv" />
+        <Parameter name="inputsIncludeNumber" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="isValidCsv = false =&gt; inputsIncludeLetter = false">
+      <Parameters>
+        <Parameter name="isValidCsv" />
+        <Parameter name="inputsIncludeLetter" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="isValidCsv = false =&gt; inputsIncludeSymbols = false">
+      <Parameters>
+        <Parameter name="isValidCsv" />
+        <Parameter name="inputsIncludeSymbols" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="3">
+      <Value>4</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="4">
+      <Value>5</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="5">
+      <Value>6</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="6">
+      <Value>7</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>ISCSVFILE</Value>
+    <Value>ISVALIDCSV</Value>
+    <Value>INPUTSINCLUDENUMBER</Value>
+    <Value>INPUTSINCLUDELETTER</Value>
+    <Value>INPUTSINCLUDESYMBOLS</Value>
+  </Header>
+  <Stat-Data>
+    <ExecutionTime>0.059</ExecutionTime>
+    <MaxDomainSize>2</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>33</TotalNoOfCombination>
+    <TotalNoOfTests>7</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+

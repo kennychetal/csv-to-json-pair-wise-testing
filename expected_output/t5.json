@@ -1,0 +1,17 @@
+[
+    {
+        "symbol": "@", 
+        "letter2": "a", 
+        "letter": "j"
+    }, 
+    {
+        "symbol": "$", 
+        "letter2": "x", 
+        "letter": "m"
+    }, 
+    {
+        "symbol": "%", 
+        "letter2": "y", 
+        "letter": "a"
+    }
+]
